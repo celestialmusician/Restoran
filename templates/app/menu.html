@@ -1,0 +1,197 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Menu - Cozy Restaurant</title>
+    Bootstrap CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body> --> 
+
+  {% extends 'base.html' %}
+
+{% block title %}Booking{% endblock %}
+
+{% block main %}
+    <div class="container py-5">
+      <div class="card shadow-lg rounded">
+        <div class="card-body">
+          <h1 class="text-center mb-4" style="color: #8d5524">Our Menu</h1>
+
+          <div class="row gy-4">
+            <!-- Menu Item 1 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1632158929962-a929c9e87570?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                  class="card-img-top"
+                  alt="Grilled Chicken"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Grilled Chicken</h5>
+                  <p class="card-text">
+                    Tender grilled chicken served with herbs and a side of
+                    creamy mashed potatoes.
+                  </p>
+                  <p class="fw-bold text-success">₹250</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1705686155055-269efeedeb82?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                  class="card-img-top"
+                  alt="Pasta Primavera"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Pasta Primavera</h5>
+                  <p class="card-text">
+                    Classic Italian pasta tossed with fresh seasonal vegetables.
+                  </p>
+                  <p class="fw-bold text-success">₹220</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1712652080841-9e480a2c43ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                  class="card-img-top"
+                  alt="Cheese Pizza"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Cheese Pizza</h5>
+                  <p class="card-text">
+                    A wood-fired specialty with mozzarella, basil, and fresh
+                    tomatoes.
+                  </p>
+                  <p class="fw-bold text-success">₹180</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1530554764233-e79e16c91d08?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                  class="card-img-top"
+                  alt="Veg Burger"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Veg Burger</h5>
+                  <p class="card-text">
+                    Burger with a crispy veggie patty, tangy sauce, and melted
+                    cheese.
+                  </p>
+                  <p class="fw-bold text-success">₹150</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Menu Item 5 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1621792907526-e69888069079?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                  class="card-img-top"
+                  alt="Chocolate Mousse"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Chocolate Mousse</h5>
+                  <p class="card-text">
+                    Rich, creamy chocolate dessert topped with whipped cream.
+                  </p>
+                  <p class="fw-bold text-success">₹120</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Menu Item 6 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1668970851336-6c81cc888ba7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                  class="card-img-top"
+                  alt="Cappuccino"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Cappuccino</h5>
+                  <p class="card-text">
+                    Freshly brewed coffee with frothy milk and a hint of cocoa.
+                  </p>
+                  <p class="fw-bold text-success">₹100</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Menu Item 7 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1587339144367-f1cacbecac82?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                  class="card-img-top"
+                  alt="Pancakes"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Fluffy Pancakes</h5>
+                  <p class="card-text">
+                    Stack of golden pancakes with maple syrup and butter.
+                  </p>
+                  <p class="fw-bold text-success">₹150</p>
+                </div>
+              </div>
+            </div>
+              <!-- Menu Item 8 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                  class="card-img-top"
+                  alt="Margherita Pizza"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Margherita Pizza</h5>
+                  <p class="card-text">
+                    Classic pizza with fresh mozzarella, basil, and tomato
+                    sauce.
+                  </p>
+                  <p class="fw-bold text-success">₹280</p>
+                </div>
+              </div>
+            </div>
+              <!-- Menu Item 9 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.unsplash.com/photo-1751890893842-7807b463b344?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                  class="card-img-top"
+                  alt="Fresh Salad"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Garden Fresh Salad</h5>
+                  <p class="card-text">
+                    Crisp greens with cherry tomatoes, cucumber, and
+                    vinaigrette.
+                  </p>
+                  <p class="fw-bold text-success">₹180</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+  <!-- </body>
+</html> -->
